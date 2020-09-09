@@ -60,6 +60,9 @@ last_tint_or_none = lambda lst: lst[-1][DATE] if len(lst) else None
 not_none = lambda lst: list(filter(lambda item: item is not None, lst))
 
 
+dcmp = lambda s: lzma.decompress(base64.b64decode(s)).decode()
+
+
 with open('Tints.csv', 'r', encoding='utf-8') as csvfile:
     rows = [row for row in csv.reader(csvfile, delimiter=',', quotechar='"')]
 
@@ -110,8 +113,8 @@ with open('Tints_processed.csv', 'w', newline='\n', encoding='utf-8') as csvfile
     for hero in sorted(heroes.values(), key=lambda hero: hero[NAME]):
         w.writerow([hero[NAME], hero[RELEASE], hero[NSKINS], hero[LAST_NORMAL_SKIN], hero[LAST_SEASONAL_SKIN], hero[LAST_ANY_SKIN], hero[LAST_NORMAL_TINT], hero[LAST_SEASONAL_TINT], hero[LAST_ANY_TINT], hero[Q], hero[Q2]])
 
-html = lzma.decompress(base64.b64decode('''
-    /Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4B6NBrddAB4IRQbQ76goF1nZmeKAe6uX9wKJf3+e7z8SOpoMr+OXZrSX0MSYzkbsb7EUaD1A6atnEhfZ14jDej6Qp3melM5/9D4WsKSsKmPYHGuMJGX/JpQ/RfIw
+html = dcmp('''
+    /Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4B8bBvhdAB4IRQbQ76goF1nZmeKAe6uX9wKJf3+e7z8SOpoMr+OXZrSX0MSYzkbsb7EUaD1A6atnEhfZ14jDej6Qp3melM5/9D4WsKSsKmPYHGuMJGX/JpQ/RfIw
     YZCgxmlnfGeUO7q7uCfBBpLPydWTo+FbO9xxlkRE24qWcDl5NMdTqmRERGtPyWazHGijaxmt5qNap2p3XNhA9saYNpMDdnf7n7NW0ed1ZIAWl+PE2IHv3Rmp11/xB165znZlc3UBNunttp9z0Z0JDrG14n6s
     QHbkisb3wefP2AOE+A6QnxCesPjUswd8aTCYvoF9dwJu26ZZbspbnhOyDMoRNlHdj9AR03kEnBcQvReeoAfu28invNvCi6T2EDl6DsznnJqU4Ca/H+MIJ6ticd9yCXYgH7DoEQ3KpuC0wUIYqgHsMdthSzyg
     ke1JMIjsrhpm2SWctn3hyf3Fyb2aA1phcEqi8xXPC+cYGh7U4UOQQ31vY7JFWGSDSnRZQdz2zJcL/WqaWR2NB1vYSIAwQpFE00Zjxw6fmJ8ofY7RFS8ahxTNF07IDlUq1Gs40u+nFFgvwnBOjcjaBlal1duw
@@ -125,29 +128,13 @@ html = lzma.decompress(base64.b64decode('''
     TcU4wwdyyTMU5GfdCZCCA0Son3otk0p0nzy3Vps4pyhfFJyo/IhVsj1JooaL5n9duCXC/Yz/rthImtNV5WzM16vMrDOFlhsxdCc/nPiV5AICUCobLM9Lqkvw+bPxVq+xOdzTwfCSLePKmbi5v40Lb/j2jrgd
     soSDcPFZFVQdd8MAaMPM34AIP0VUSblKZtWYiEQck0Q7BbVPAcWLc7b7EVsZ5G9wDZZw5KdYwQjp9nvmhMtLHOvbFRkpj44mtSgV+t7+W2gR1Zkbegom4i3xCCyEKZ7uhr3JGBGds2IGYZQh7Hb+D4Wa4oCM
     JISjM2MCnyJzkMg8Ffh8vPXrvNzFgOuKOAf5yqCLIONrMf7FOFPGzugClQNbXTnzzlcx8xCdHsexCEFu0T5xCS27ixtc1C4577wNJMpUmbQd0LIBqp5fDzoAbAsDj21AsdnrByxdJ0psyT8eEB9wwtiSOtMg
-    EMM2LMZDOFsqfK560YqbDXsQnqvIhatWxRYL2/3VCgIvdioLScA5dbi2lAishGuwFyeO48ruwRr9OR6GrcVU+tUHIQzHsphnuhYOiwyxwMTRJ9Cuy/RP9WH3i79kG03J4MTpRWgSPnQK2+4LbrcdkwAAQSIo
-    w6zIJuoAAdMNjj0AACbJWo6xxGf7AgAAAAAEWVo=
-    ''')).decode()
-tablerow = '''        <tr data-hero="{}">
-          <td align="right">{}</td>
-          <td>{}</td>
-          <td>{}</td>
-          <td>{}</td>
-          <td>{}</td>
-          <td></td>
-          <td>{}</td>
-          <td></td>
-          <td>{}</td>
-          <td></td>
-          <td>{}</td>
-          <td></td>
-          <td>{}</td>
-          <td></td>
-          <td>{}</td>
-          <td></td>
-          <td></td>
-          <td data-skins-exclude="{}"></td>
-        </tr>'''
+    EMM2LMZDOFsqfK560YqbDXsQnqvIhatWxRYL2/3VCgIvdioLScA5dbi2lAishGuwFyeO48ruwRr9OR6GrcVU+tUHIQzHsphnuhYOiwyxwMTRJ9Cuy/RP9WH3i79kG03J4MTrwfofqz+ALACYPIrSCxNZz5A7
+    SmOx9eeoeNekb2Hjt2/YZJvazhMBDvJM/7hMM6/WdFBZsZrFJiGrraHdKxsiCJRKwJggLSmTKJAbcR/GACfMoOVNnC5YAAGUDpw+AABvqPEjscRn+wIAAAAABFla
+    ''')
+tablerow = dcmp('''
+    /Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4AHKAFVdABBqiw6HIQFhryjN5VJnfJFopS4c/MTCKwWdg2lWAYefr5NypXnL55lsYX0hiL6dQq7aVi9Vj5qBYX5NsDmFNSjUgdhL5XajMgG1Nmyc0fgpxNdwDm4A
+    AAAAVfNUgEwofWYAAXHLAwAAAJ18W4+xxGf7AgAAAAAEWVo=
+    ''')
 html = html.replace('{}', '\n'.join([tablerow.format(*list(map(lambda x: '' if x is None else x, [hero[NAME].replace('ú', '&uacute;'), n, hero[NAME].replace('ú', '&uacute;'), hero[RELEASE], hero[NSKINS], hero[LAST_NORMAL_SKIN], hero[LAST_SEASONAL_SKIN], hero[LAST_ANY_SKIN], hero[LAST_NORMAL_TINT], hero[LAST_SEASONAL_TINT], hero[LAST_ANY_TINT], 1 if hero[NAME] in CDPS_LIST else 0]))) for n, hero in enumerate(sorted(heroes.values(), key=lambda hero: hero[NAME].replace('ú', 'u')), 1)]), 1)
 html = html.replace('{}', ', '.join(CDPS_LIST[hero] for hero in sorted(CDPS_LIST)))
 
