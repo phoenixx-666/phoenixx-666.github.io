@@ -447,6 +447,7 @@ Fenix,Dark Nexus Fenix,Base,2020-04-14,Seasonal
 Fenix,Dark Nexus Fenix,Eldritch,2020-04-14,Seasonal
 Fenix,Dark Nexus Fenix,Imperial,2020-04-14,Seasonal
 Fenix,Fenix,Base,2018-03-27,"Free, when Hero Owned"
+Fenix,Fenix,Eternal,2021-12-07,Normal
 Fenix,Fenix,Experimental,2018-03-27,Normal
 Fenix,Fenix,Nerazim,2018-03-27,"Free, when Hero Owned"
 Fenix,Fenix,Rusted,2018-03-27,Normal
@@ -715,6 +716,11 @@ Kel'Thuzad,Star Lich Kel'Thuzad,Eternal,2017-09-05,Normal
 Kel'Thuzad,Star Lich Kel'Thuzad,Frost,2017-09-05,Normal
 Kel'Thuzad,Star Lich Kel'Thuzad,Hunter,2017-09-05,Normal
 Kel'Thuzad,Star Lich Kel'Thuzad,Neutron,2017-09-05,Normal
+Kerrigan,Brood War Kerrigan,Base,2021-12-07,Normal
+Kerrigan,Brood War Kerrigan,Braxis,2021-12-07,Normal
+Kerrigan,Brood War Kerrigan,Char,2021-12-07,Normal
+Kerrigan,Brood War Kerrigan,Korhal,2021-12-07,Normal
+Kerrigan,Brood War Kerrigan,Tarsonis,2021-12-07,Normal
 Kerrigan,Cheerleader Kerrigan,Azure,2017-04-11,Normal
 Kerrigan,Cheerleader Kerrigan,Base,2017-04-11,Normal
 Kerrigan,Cheerleader Kerrigan,Crimson,2017-04-11,Normal
@@ -850,6 +856,11 @@ Li-Ming,Templar Li-Ming,Base,2017-08-08,Normal
 Li-Ming,Templar Li-Ming,Dark,2017-08-08,Normal
 Li-Ming,Templar Li-Ming,First Ascendant,2017-08-08,Normal
 Li-Ming,Templar Li-Ming,Void,2017-08-08,Normal
+Li-Ming,Zan Esu Li-Ming,Base,2021-12-07,Normal
+Li-Ming,Zan Esu Li-Ming,Brilliant,2021-12-07,Normal
+Li-Ming,Zan Esu Li-Ming,Charged,2021-12-07,Normal
+Li-Ming,Zan Esu Li-Ming,Glacial,2021-12-07,Normal
+Li-Ming,Zan Esu Li-Ming,Scarlet,2021-12-07,Normal
 Lt. Morales,Apothecary Morales,Base,2015-10-06,Normal
 Lt. Morales,Apothecary Morales,Crimson,2015-10-06,Normal
 Lt. Morales,Apothecary Morales,Ivory,2015-10-06,Normal
@@ -1165,6 +1176,13 @@ Ragnaros,Ragnaros,Scorching,2016-12-14,"Free, when Hero Owned"
 Ragnaros,Sulfuron Ragnaros,Base,2016-12-14,Normal
 Ragnaros,Sulfuron Ragnaros,Flame,2016-12-14,Normal
 Ragnaros,Sulfuron Ragnaros,Infernal,2016-12-14,Normal
+Raynor,Classic Raynor,Alpha Squad,2021-12-07,Normal
+Raynor,Classic Raynor,Antiga,2021-12-07,Normal
+Raynor,Classic Raynor,Base,2021-12-07,Normal
+Raynor,Classic Raynor,Delta,2021-12-07,Normal
+Raynor,Classic Raynor,Elite Guard,2021-12-07,Normal
+Raynor,Classic Raynor,Mar Sara,2021-12-07,Normal
+Raynor,Classic Raynor,Omega Squad,2021-12-07,Normal
 Raynor,Commander Raynor,Base,2014-06-03,Normal
 Raynor,Commander Raynor,Desert,2014-06-03,Normal
 Raynor,Commander Raynor,Jungle,2014-06-03,Normal
@@ -1210,6 +1228,13 @@ Rehgar,Rehgar,Bloodlust,2014-07-23,"Free, when Hero Owned"
 Rehgar,Rehgar,Timberwolf,2014-07-23,"Free, when Hero Owned"
 Rehgar,Rehgar,Riptide,2017-04-25,Normal
 Rehgar,Rehgar,Gladiator,2018-06-12,Normal
+Rehgar,Shaman Adept Rehgar,Base,2021-12-07,Normal
+Rehgar,Shaman Adept Rehgar,Chaos,2021-12-07,Normal
+Rehgar,Shaman Adept Rehgar,Desert,2021-12-07,Normal
+Rehgar,Shaman Adept Rehgar,Northrend,2021-12-07,Normal
+Rehgar,Shaman Adept Rehgar,Shadow,2021-12-07,Normal
+Rehgar,Shaman Adept Rehgar,Storm,2021-12-07,Normal
+Rehgar,Shaman Adept Rehgar,Verdant,2021-12-07,Normal
 Rehgar,Storm Wolf Rehgar,Base,2014-07-23,Normal
 Rehgar,Storm Wolf Rehgar,Crimson,2014-07-23,Normal
 Rehgar,Storm Wolf Rehgar,Mag'har,2014-07-23,Normal
@@ -1410,6 +1435,10 @@ The Butcher,The Butcherlisk,Base,2016-09-13,Normal
 The Butcher,The Butcherlisk,Enraged,2016-09-13,Normal
 The Butcher,The Butcherlisk,Festering,2016-09-13,Normal
 The Butcher,The Butcherlisk,Grendel,2017-08-08,Normal
+The Butcher,Tristram Butcher,Base,2021-12-07,Normal
+The Butcher,Tristram Butcher,Charred,2021-12-07,Normal
+The Butcher,Tristram Butcher,Crispy,2021-12-07,Normal
+The Butcher,Tristram Butcher,Raw,2021-12-07,Normal
 The Lost Vikings,Pajama Party Lost Vikings,Base,2015-02-10,Normal
 The Lost Vikings,Pajama Party Lost Vikings,Pastel,2015-02-10,Normal
 The Lost Vikings,Pajama Party Lost Vikings,Toon,2015-02-10,Normal
@@ -1616,8 +1645,12 @@ Varian,Lo'Gosh Varian,Azure,2016-11-15,Normal
 Varian,Lo'Gosh Varian,Base,2016-11-15,Normal
 Varian,Lo'Gosh Varian,Ivory,2016-11-15,Normal
 Varian,Lo'Gosh Varian,Deadly,2017-08-08,Normal
+Varian,Stormwind Footman Varian,Alterac,2021-12-07,Limited
 Varian,Stormwind Footman Varian,Base,2019-04-30,Limited
+Varian,Stormwind Footman Varian,Dalaran,2021-12-07,Limited
+Varian,Stormwind Footman Varian,Gilneas,2021-12-07,Limited
 Varian,Stormwind Footman Varian,Kul Tiras,2019-04-30,Limited
+Varian,Stormwind Footman Varian,Lordaeron,2021-12-07,Limited
 Varian,Stormwind Footman Varian,Stromgarde,2019-04-30,Limited
 Varian,Varian,Alabaster,2016-11-15,"Free, when Hero Owned"
 Varian,Varian,Base,2016-11-15,"Free, when Hero Owned"
